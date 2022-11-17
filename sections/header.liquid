@@ -842,6 +842,10 @@
       "label": "t:sections.header.settings.menu.label"
     },
     {
+        "type":"header",
+        "content":"Mega menu"
+    },
+    {
       "type": "select",
       "id": "menu_type_desktop",
       "options": [
@@ -928,6 +932,35 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    }
+  ],
+  "blocks":[
+    {
+        "type":"MegaMenu",
+        "name":"MegaMenu",
+        "limit":4,
+        "settings":[
+          {
+            "type":"text",
+             "label":"Menu Title",
+             "id":"Menu_title"
+          },
+          {
+              "type":"link_list",
+              "label":"Menu_list1",
+              "id":"Menu_list1"
+          },
+          {
+            "type":"link_list",
+            "label":"Menu_list1",
+            "id":"Menu_list2"
+          },
+          {
+             "type":"image_picker",
+             "label":"image",
+             "id":"mega_menu"
+          }
+        ]
     }
   ]
 }
