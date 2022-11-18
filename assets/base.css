@@ -2959,4 +2959,27 @@ details-disclosure > details {
 }
 
 
- https://demo-ankit-joshi.myshopify.com/admin/themes/138356130079/editor
+/**
+  mega menu css
+**/
+
+.mega-menu-container {
+  position: relative;
+  display: flex;
+  
+}
+.mega_header:hover .mega-menu-container {
+  display: flex!important;
+}
+.mega-menu-container {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  padding: 5px;
+  display: none;
+  top: 50px;
+  padding-top: 32px;
+}
+ul.megamenu li {
+  list-style: none;
+}
