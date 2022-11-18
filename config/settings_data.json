@@ -156,9 +156,10 @@
           "c233662f-d963-4ac6-92da-56177eb78706": {
             "type": "MegaMenu",
             "settings": {
-              "Menu_title": "",
-              "Menu_list1": "",
-              "Menu_list2": ""
+              "Menu_title": "Contact",
+              "Menu_list1": "main-menu",
+              "Menu_list2": "menu-2",
+              "mega_menu": "shopify:\/\/shop_images\/8_150x_0d8b5242-64ec-412c-b409-7b46cecc3d6b.webp"
             }
           }
         },
