@@ -148,8 +148,9 @@
             "type": "MegaMenu",
             "settings": {
               "Menu_title": "Home",
-              "Menu_list1": "",
-              "Menu_list2": ""
+              "Menu_list1": "menu-1",
+              "Menu_list2": "menu-2",
+              "mega_menu": "shopify:\/\/shop_images\/8_150x_0d8b5242-64ec-412c-b409-7b46cecc3d6b.webp"
             }
           }
         },
