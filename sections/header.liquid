@@ -451,14 +451,18 @@
                   <ul class="megamenu">
                     {% assign menumega = block.settings.Menu_list1 %}
                     {%- for link in menumega.links -%}
-                      <li>{{ link.title }}</li>
+                     {%- for link in menumega2.links -%}
+                      <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
+                    {% endfor %}  
                     {% endfor %}  
                     </ul> 
                     
                   <ul class="megamenu">
                     {% assign menumega2 = block.settings.Menu_list2 %}
                     {%- for link in menumega2.links -%}
-                      <li>{{ link.title }}</li>
+                      {%- for link in menumega2.links -%}
+                      <a href="{{ link.url }}"><li>{{ link.title }}</li></a>
+                    {% endfor %}  
                     {% endfor %}  
                     </ul>
                      
