@@ -440,10 +440,41 @@
                     <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
                   </a>
                 {%- endif -%}
+
+                 
+                {% assign linktitle = link.title | downcase %}
+                {% for block in section.blocks %}
+                {% assign val= block.settings.Menu_title | downcase %}
+                {% if val == linktitle %}
+                 <div class="mega-menu-container"> 
+                  <ul class="megamenu">
+                    {% assign menumega = block.settings.Menu_list1 %}
+                    {%- for link in menumega.links -%}
+                      <li>{{ link.title }}</li>
+                    {% endfor %}  
+                    </ul> 
+                    
+                  <ul class="megamenu">
+                    {% assign menumega2 = block.settings.Menu_list2 %}
+                    {%- for link in menumega2.links -%}
+                      <li>{{ link.title }}</li>
+                    {% endfor %}  
+                    </ul>
+                     
+                    {% if block.settings.mega_menu != blank %}
+                      <div class="megamenu-img">
+                        <img src="{{ block.settings.mega_menu | img_url:'master' }}">
+                      </div>  
+                    {% endif %}  
+                  </div>    
+                {% endif %}
+                {% endfor %}      
+                 
               </li>
             {%- endfor -%}
           </ul>
         </nav>
+
       {%- else -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
@@ -947,12 +978,12 @@
           },
           {
               "type":"link_list",
-              "label":"Menu_list1",
+              "label":"Menu list ",
               "id":"Menu_list1"
           },
           {
             "type":"link_list",
-            "label":"Menu_list1",
+            "label":"Menu list",
             "id":"Menu_list2"
           },
           {

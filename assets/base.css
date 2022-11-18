@@ -2957,3 +2957,14 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+
+/**
+  mega menu css
+**/
+
+.mega-menu-container {
+  position: relative;
+  display: flex;
+  display: none;
+}
