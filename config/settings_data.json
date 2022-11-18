@@ -152,10 +152,19 @@
               "Menu_list2": "menu-2",
               "mega_menu": "shopify:\/\/shop_images\/8_150x_0d8b5242-64ec-412c-b409-7b46cecc3d6b.webp"
             }
+          },
+          "c233662f-d963-4ac6-92da-56177eb78706": {
+            "type": "MegaMenu",
+            "settings": {
+              "Menu_title": "",
+              "Menu_list1": "",
+              "Menu_list2": ""
+            }
           }
         },
         "block_order": [
-          "16442d0c-a3a9-4dda-9dc7-0438f1c58309"
+          "16442d0c-a3a9-4dda-9dc7-0438f1c58309",
+          "c233662f-d963-4ac6-92da-56177eb78706"
         ],
         "settings": {
           "color_scheme": "background-1",
