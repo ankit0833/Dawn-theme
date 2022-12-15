@@ -120,7 +120,7 @@
     "currency_code_enabled": true,
     "cart_type": "drawer",
     "show_vendor": false,
-    "show_cart_note": false,
+    "show_cart_note": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
